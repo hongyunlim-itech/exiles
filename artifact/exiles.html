@@ -1,0 +1,24 @@
+<title>Exiles Frontier Town</title>
+<meta name="description" content="A survival town builder in the browser, inspired by Banished." />
+<link rel="stylesheet" href="./assets/index-DNG9N4JU.css" />
+<style>
+  /* Single dark look (a game world at dusk): paint everything explicitly. */
+  :root {
+    color-scheme: dark;
+    --ground: #17130e;
+    --ink: #eadfc8;
+    --gold: #d8c49a;
+  }
+  html, body { height: 100%; margin: 0; overflow: hidden; background: var(--ground); color: var(--ink); }
+  #app { position: fixed; inset: 0; }
+  #app canvas { display: block; width: 100%; height: 100%; outline: none; }
+  #ui { position: fixed; inset: 0; pointer-events: none; }
+  #boot {
+    position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+    font: 600 20px Georgia, serif; letter-spacing: 0.08em; color: var(--gold); background: var(--ground);
+  }
+</style>
+<div id="app"></div>
+<div id="ui"></div>
+<div id="boot">Preparing the land…</div>
+<script type="module" src="./assets/index-Cag7mGuz.js"></script>

@@ -1,0 +1,24 @@
+// Exiles on Cloudflare Workers: the Vite build (dist/) as static assets + the public co-op relay (cloud/worker.ts).
+//   npm run cf:dev      → vite build && wrangler dev   (http://localhost:8787/?room=test-room)
+//   npm run cf:deploy   → vite build && wrangler deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "exiles",
+  "main": "cloud/worker.ts",
+  "compatibility_date": "2026-09-01",
+  // Public home of the game (hylim.casa zone on the same Cloudflare account); workers.dev stays as a fallback URL.
+  "routes": [{ "pattern": "exiles.hylim.casa", "custom_domain": true }],
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "ROOMS", "class_name": "Room" }]
+  },
+  // SQLite-backed Durable Objects (the Workers Free plan supports only these)
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Room"] }],
+  "observability": { "enabled": true }
+}

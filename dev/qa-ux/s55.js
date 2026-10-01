@@ -1,0 +1,1 @@
+return await page.evaluate(()=>{const s=window.__app.game.state; return {w: s.weather, msgs: s.messages.filter(m=>/freez|cold|firewood|warm/i.test(m.text)).map(m=>m.text), alice: (()=>{const c=s.citizens.find(c=>c.id===50); return {x:c.x,z:c.z}})(), cam: [window.__app.renderer.cameraController.target.x, window.__app.renderer.cameraController.target.z]}});

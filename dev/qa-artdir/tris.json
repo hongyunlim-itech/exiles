@@ -1,0 +1,962 @@
+{
+ "agg": {
+  "sky-dome": {
+   "meshes": 1,
+   "totalTris": 2208,
+   "casterTris": 0,
+   "maxTrisPerInstance": 2208
+  },
+  "terrain": {
+   "meshes": 2,
+   "totalTris": 166208,
+   "casterTris": 51200,
+   "maxTrisPerInstance": 115008
+  },
+  "water": {
+   "meshes": 1,
+   "totalTris": 4070,
+   "casterTris": 0,
+   "maxTrisPerInstance": 4070
+  },
+  "nature": {
+   "meshes": 106,
+   "totalTris": 473600,
+   "casterTris": 472712,
+   "maxTrisPerInstance": 240
+  },
+  "crops": {
+   "meshes": 5,
+   "totalTris": 22072,
+   "casterTris": 8558,
+   "maxTrisPerInstance": 340
+  },
+  "buildings-root": {
+   "meshes": 66,
+   "totalTris": 85047,
+   "casterTris": 84807,
+   "maxTrisPerInstance": 3646
+  },
+  "animals": {
+   "meshes": 13,
+   "totalTris": 19772,
+   "casterTris": 17852,
+   "maxTrisPerInstance": 120
+  },
+  "citizens": {
+   "meshes": 19,
+   "totalTris": 25814,
+   "casterTris": 17316,
+   "maxTrisPerInstance": 128
+  },
+  "effects": {
+   "meshes": 7,
+   "totalTris": 3048,
+   "casterTris": 0,
+   "maxTrisPerInstance": 1232
+  },
+  "overlays": {
+   "meshes": 0,
+   "totalTris": 0,
+   "casterTris": 0,
+   "maxTrisPerInstance": 0
+  }
+ },
+ "natureGeos": [
+  {
+   "tris": 240,
+   "inst": 0,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 64,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 40,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 36,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 47,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 172,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 85,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 165,
+   "meshes": 1
+  },
+  {
+   "tris": 240,
+   "inst": 82,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 0,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 30,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 25,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 17,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 26,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 107,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 15,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 109,
+   "meshes": 1
+  },
+  {
+   "tris": 170,
+   "inst": 33,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 12,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 10,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 3,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 19,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 4,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 9,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 3,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 7,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 5,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 18,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 1,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 3,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 3,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 11,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 7,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 5,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 4,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 5,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 14,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 12,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 4,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 1,
+   "meshes": 1
+  },
+  {
+   "tris": 76,
+   "inst": 8,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 0,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 114,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 57,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 85,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 94,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 94,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 60,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 22,
+   "meshes": 1
+  },
+  {
+   "tris": 68,
+   "inst": 123,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 33,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 53,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 84,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 25,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 36,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 114,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 73,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 28,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 46,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 44,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 34,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 24,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 23,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 44,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 101,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 12,
+   "meshes": 1
+  },
+  {
+   "tris": 64,
+   "inst": 5,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 64,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 84,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 109,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 155,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 33,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 177,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 194,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 65,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 72,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 71,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 64,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 85,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 25,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 33,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 109,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 40,
+   "meshes": 1
+  },
+  {
+   "tris": 60,
+   "inst": 21,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 81,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 75,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 34,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 106,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 142,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 38,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 77,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 158,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 195,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 81,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 236,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 143,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 170,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 137,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 90,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 114,
+   "meshes": 1
+  },
+  {
+   "tris": 28,
+   "inst": 70,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 10,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 1,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 9,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 12,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 20,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 31,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 14,
+   "meshes": 1
+  },
+  {
+   "tris": 8,
+   "inst": 14,
+   "meshes": 1
+  }
+ ],
+ "citizensGeos": {
+  "ad9569": {
+   "tris": 24,
+   "inst": 118,
+   "cast": true
+  },
+  "3af711": {
+   "tris": 64,
+   "inst": 59,
+   "cast": true
+  },
+  "65caae": {
+   "tris": 44,
+   "inst": 29,
+   "cast": true
+  },
+  "3517d4": {
+   "tris": 128,
+   "inst": 59,
+   "cast": true
+  },
+  "2a4214": {
+   "tris": 72,
+   "inst": 30,
+   "cast": false
+  },
+  "f96b56": {
+   "tris": 104,
+   "inst": 29,
+   "cast": false
+  },
+  "73622e": {
+   "tris": 12,
+   "inst": 118,
+   "cast": true
+  },
+  "872aaf": {
+   "tris": 12,
+   "inst": 118,
+   "cast": false
+  },
+  "3ea816": {
+   "tris": 56,
+   "inst": 1,
+   "cast": false
+  },
+  "cdc43b": {
+   "tris": 8,
+   "inst": 1,
+   "cast": false
+  },
+  "4005ca": {
+   "tris": 88,
+   "inst": 15,
+   "cast": false
+  },
+  "1ae7e0": {
+   "tris": 44,
+   "inst": 3,
+   "cast": false
+  },
+  "6f4bb7": {
+   "tris": 24,
+   "inst": 0,
+   "cast": true
+  },
+  "37d5f2": {
+   "tris": 40,
+   "inst": 8,
+   "cast": true
+  },
+  "b93b41": {
+   "tris": 24,
+   "inst": 3,
+   "cast": true
+  },
+  "db4eb0": {
+   "tris": 36,
+   "inst": 2,
+   "cast": true
+  },
+  "4c6de3": {
+   "tris": 36,
+   "inst": 3,
+   "cast": false
+  },
+  "37ef4b": {
+   "tris": 40,
+   "inst": 0,
+   "cast": false
+  },
+  "5292e4": {
+   "tris": 24,
+   "inst": 2,
+   "cast": false
+  },
+  "0cdf4a": {
+   "tris": 24,
+   "inst": 0,
+   "cast": false
+  },
+  "2ae82b": {
+   "tris": 34,
+   "inst": 1,
+   "cast": false
+  },
+  "03f3b5": {
+   "tris": 66,
+   "inst": 0,
+   "cast": false
+  },
+  "0affac": {
+   "tris": 56,
+   "inst": 0,
+   "cast": false
+  },
+  "2c2f00": {
+   "tris": 100,
+   "inst": 2,
+   "cast": false
+  }
+ },
+ "animalsGeos": {
+  "e90bbf": {
+   "tris": 120,
+   "inst": 2,
+   "cast": true
+  },
+  "8d01c7": {
+   "tris": 56,
+   "inst": 2,
+   "cast": true
+  },
+  "b844a0": {
+   "tris": 24,
+   "inst": 8,
+   "cast": true
+  },
+  "f850bf": {
+   "tris": 60,
+   "inst": 2,
+   "cast": true
+  },
+  "15326b": {
+   "tris": 76,
+   "inst": 2,
+   "cast": true
+  },
+  "ae4575": {
+   "tris": 24,
+   "inst": 8,
+   "cast": true
+  },
+  "42a45f": {
+   "tris": 54,
+   "inst": 2,
+   "cast": true
+  },
+  "b66e05": {
+   "tris": 52,
+   "inst": 2,
+   "cast": true
+  },
+  "a4d9e9": {
+   "tris": 24,
+   "inst": 4,
+   "cast": false
+  },
+  "c02acb": {
+   "tris": 60,
+   "inst": 77,
+   "cast": true
+  },
+  "c43a6f": {
+   "tris": 60,
+   "inst": 77,
+   "cast": true
+  },
+  "ec154d": {
+   "tris": 24,
+   "inst": 308,
+   "cast": true
+  },
+  "b69e1f": {
+   "tris": 48,
+   "inst": 38,
+   "cast": false
+  }
+ },
+ "cropsGeos": {
+  "426938": {
+   "tris": 168,
+   "inst": 0,
+   "cast": true
+  },
+  "b0499b": {
+   "tris": 158,
+   "inst": 25,
+   "cast": true
+  },
+  "9d58f8": {
+   "tris": 340,
+   "inst": 16,
+   "cast": false
+  },
+  "b32571": {
+   "tris": 54,
+   "inst": 31,
+   "cast": false
+  },
+  "ee1cc0": {
+   "tris": 100,
+   "inst": 64,
+   "cast": false
+  },
+  "7fd69e": {
+   "tris": 144,
+   "inst": 32,
+   "cast": true
+  },
+  "106b72": {
+   "tris": 48,
+   "inst": 0,
+   "cast": false
+  },
+  "4106c1": {
+   "tris": 120,
+   "inst": 0,
+   "cast": false
+  },
+  "a94b55": {
+   "tris": 90,
+   "inst": 0,
+   "cast": false
+  },
+  "9c4b81": {
+   "tris": 120,
+   "inst": 0,
+   "cast": false
+  }
+ },
+ "effectsGeos": {
+  "fb223a": {
+   "tris": 2,
+   "inst": 1,
+   "cast": false
+  },
+  "21ca5e": {
+   "tris": 2,
+   "inst": 1,
+   "cast": false
+  },
+  "36d28f": {
+   "tris": 2,
+   "inst": 1,
+   "cast": false
+  },
+  "74771b": {
+   "tris": 2,
+   "inst": 1,
+   "cast": false
+  },
+  "b4a4ea": {
+   "tris": 2,
+   "inst": 1,
+   "cast": false
+  },
+  "2d4f90": {
+   "tris": 1232,
+   "inst": 2,
+   "cast": false
+  },
+  "b420f7": {
+   "tris": 12,
+   "inst": 48,
+   "cast": false
+  }
+ },
+ "buildingsByNode": {
+  "building-mesh:storageBarn": 1964,
+  "building-mesh:stockpile": 720,
+  "building-mesh:woodenHouse": 12007,
+  "building-mesh:gathererHut": 2262,
+  "building-mesh:woodcutter": 4460,
+  "building-mesh:hunterCabin": 1646,
+  "building-mesh:cropField": 1824,
+  "building-mesh:well": 404,
+  "building-mesh:foresterLodge": 2562,
+  "building-mesh:fishingDock": 1182,
+  "building-mesh:cemetery": 808,
+  "building-mesh:herbalist": 1242,
+  "building-mesh:tailor": 894,
+  "building-mesh:orchard": 2180,
+  "building-mesh:quarry": 1764,
+  "building-mesh:blacksmith": 1912,
+  "building-mesh:townHall": 3646,
+  "building-mesh:market": 3720,
+  "building-mesh:chapel": 1986,
+  "building-mesh:tavern": 1908,
+  "building-mesh:school": 2456,
+  "building-mesh:hospital": 1384,
+  "building-mesh:brewery": 1266,
+  "building-mesh:stoneHouse": 2420,
+  "building-mesh:boardingHouse": 2266,
+  "building-mesh:pasture": 4164,
+  "building-mesh:tradingPost": 1282,
+  "building-mesh:mine": 942,
+  "": 1176,
+  "piles:logs": 9072,
+  "piles:stones": 600,
+  "piles:ore": 1960,
+  "piles:firewood": 3500,
+  "piles:crate": 0,
+  "piles:basket": 0,
+  "piles:barrel": 0,
+  "piles:content": 0,
+  "piles:sack": 0,
+  "bridges": 3468
+ },
+ "buildingsChildren": [
+  {
+   "name": "buildings",
+   "type": "Group",
+   "ud": [],
+   "n": 54
+  },
+  {
+   "name": "building-piles",
+   "type": "Group",
+   "ud": [],
+   "n": 9
+  },
+  {
+   "name": "bridges",
+   "type": "Group",
+   "ud": [],
+   "n": 1
+  },
+  {
+   "name": "merchant-boat",
+   "type": "Mesh",
+   "ud": [],
+   "n": 0
+  },
+  {
+   "name": "selection-ring",
+   "type": "Mesh",
+   "ud": [],
+   "n": 0
+  }
+ ]
+}

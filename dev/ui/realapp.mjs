@@ -1,0 +1,41 @@
+// Smoke-test the UI inside the real app (index.html). Usage: node dev/ui/realapp.mjs <outDir>
+import { chromium } from 'playwright';
+import path from 'node:path';
+const out = process.argv[2] ?? '.';
+const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+page.setDefaultTimeout(120000);
+await page.addInitScript(() => localStorage.setItem('exiles.settings', JSON.stringify({ quality: 'low', shadows: false, showFps: true })));
+const errors = [];
+page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
+page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') errors.push(`console.${m.type()}: ${m.text()}`); });
+await page.goto('http://localhost:5204/', { waitUntil: 'load' });
+await page.waitForTimeout(6000);
+await page.screenshot({ path: path.join(out, 'real_title.png') });
+const hasMenu = await page.evaluate(() => !!document.querySelector('.menu') && !document.querySelector('.menu').hidden);
+console.log('menu visible:', hasMenu);
+if (hasMenu) {
+  await page.click('.menu-btn >> text=New Game');
+  await page.click('.ng-form button[type=submit]');
+  await page.waitForTimeout(9000);
+  await page.screenshot({ path: path.join(out, 'real_game.png') });
+  await page.evaluate(() => window.__app?.setSpeed(10));
+  await page.waitForTimeout(8000);
+  await page.keyboard.press('p');
+  await page.waitForTimeout(600);
+  await page.screenshot({ path: path.join(out, 'real_game2.png') });
+  const b = await page.evaluate(() => window.__app?.game.state.buildings[0]?.id);
+  if (b !== undefined) await page.evaluate((id) => window.__app.select({ kind: 'building', id }), b);
+  await page.keyboard.press('p');
+  await page.keyboard.press('o');
+  await page.waitForTimeout(800);
+  await page.screenshot({ path: path.join(out, 'real_game3.png') });
+  const c = await page.evaluate(() => window.__app?.game.state.citizens[0]?.id);
+  if (c !== undefined) await page.evaluate((id) => window.__app.select({ kind: 'citizen', id }), c);
+  await page.keyboard.press('o');
+  await page.keyboard.press('k');
+  await page.waitForTimeout(800);
+  await page.screenshot({ path: path.join(out, 'real_game4.png') });
+}
+console.log([...new Set(errors)].slice(0, 30).join('\n'));
+await browser.close();

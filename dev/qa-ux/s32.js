@@ -1,0 +1,1 @@
+return await page.evaluate(()=>{const g=window.__app.game, s=g.state; const f=s.buildings.filter(b=>b.type==='cropField'); return f.map(b=>({id:b.id, crop:b.crop, prodThis: b.producedThisYear, inv: b.inventory, buf: b.buffer, fieldKeys: Object.keys(b).join(',')}));});

@@ -1,0 +1,2 @@
+const rows = await page.evaluate(()=>{const w=[...document.querySelectorAll('.win')].find(w=>!w.hidden && /PROFESSIONS/i.test(w.innerText)); if(!w) return 'nowin'; return [w.className, [...w.querySelectorAll('*')].filter(e=>e.children.length===0 && /Hunter/.test(e.textContent)).map(e=>({t:e.textContent, cls:e.className, r:[Math.round(e.getBoundingClientRect().x),Math.round(e.getBoundingClientRect().y)]}))];});
+return rows;

@@ -1,0 +1,374 @@
+/* ============================================================================================
+   Selection panel (buildings & citizens)
+   ============================================================================================ */
+
+.exiles-ui .sel-panel {
+  position: absolute;
+  top: 5.8rem;
+  right: 1rem;
+  width: 34rem;
+  max-height: calc(100vh - 5.8rem - 7.6rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1rem 1.2rem 1.2rem;
+  overscroll-behavior: contain;
+}
+.exiles-ui .sel-panel.pop {
+  animation: ui-pop 0.18s var(--ease);
+}
+
+.exiles-ui .sel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+.exiles-ui .sel-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 0.7rem;
+  font-size: 2.8rem;
+  background: radial-gradient(circle at 40% 30%, rgba(255, 230, 170, 0.18), rgba(0, 0, 0, 0.4));
+  border: 1px solid var(--line-strong);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.exiles-ui .sel-icon.gender {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #9fc3e6;
+}
+.exiles-ui .sel-icon.gender.female {
+  color: #e6a0bc;
+}
+.exiles-ui .sel-titles {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.exiles-ui .sel-name {
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--gold-hi);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.exiles-ui .sel-sub {
+  color: var(--text-dim);
+  font-size: 1.3rem;
+}
+.exiles-ui .sel-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.exiles-ui .sel-badges:empty {
+  display: none;
+}
+.exiles-ui .sel-btns {
+  display: flex;
+  gap: 0.1rem;
+  margin: -0.2rem -0.4rem 0 0;
+}
+
+.exiles-ui .sel-desc {
+  padding-top: 0.8rem;
+  color: var(--text);
+  font-size: 1.3rem;
+  display: grid;
+  gap: 0.35rem;
+}
+.exiles-ui .sel-desc > p:first-child {
+  color: #d9ccb0;
+  font-style: italic;
+}
+.exiles-ui .sel-note {
+  font-size: 1.25rem;
+  color: var(--text);
+  margin-top: 0.4rem;
+}
+.exiles-ui .sel-note.dim {
+  color: var(--text-dim);
+}
+.exiles-ui .sel-progress {
+  padding-top: 0.9rem;
+}
+.exiles-ui .sel-sub + .seg,
+.exiles-ui .sec > .sel-sub {
+  margin: 0.8rem 0 0.4rem;
+}
+.exiles-ui .sec .seg + .bar,
+.exiles-ui .sec .seg + .sel-note,
+.exiles-ui .sec .seg + div {
+  margin-top: 0.7rem;
+}
+.exiles-ui .sec .bar + .chips,
+.exiles-ui .sec .sel-note + .bar,
+.exiles-ui .sec .sel-note + .chips {
+  margin-top: 0.6rem;
+}
+
+.exiles-ui .fire-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, rgba(156, 54, 39, 0.5), rgba(90, 30, 20, 0.4));
+  border: 1px solid rgba(226, 100, 78, 0.65);
+  animation: ui-pulse-red 1.2s infinite;
+}
+.exiles-ui .fire-i {
+  font-size: 2.2rem;
+}
+.exiles-ui .fire-body {
+  flex: 1;
+  display: grid;
+  gap: 0.4rem;
+}
+.exiles-ui .fire-t {
+  font-weight: 700;
+  color: #ffd8cc;
+}
+.exiles-ui .fire-banner .bar {
+  height: 0.8rem;
+}
+
+/* workers & people */
+.exiles-ui .wk-row {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+.exiles-ui .wk-status {
+  color: var(--text-dim);
+  font-size: 1.25rem;
+}
+.exiles-ui .people {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.4rem;
+}
+.exiles-ui .people.compact {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.6rem;
+}
+.exiles-ui .person {
+  text-align: left;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.4rem;
+  color: var(--parch);
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.1s, color 0.1s;
+}
+.exiles-ui .people.compact .person {
+  padding: 0.15rem 0.7rem;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--line-soft);
+  font-size: 1.2rem;
+}
+.exiles-ui .person:hover {
+  background: rgba(201, 164, 92, 0.14);
+  color: var(--gold-hi);
+}
+.exiles-ui .person.sick {
+  color: #b8d88a;
+}
+.exiles-ui .people-empty {
+  color: var(--text-faint);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.exiles-ui .household {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.7rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.5rem;
+  background: var(--inset);
+  border: 1px solid var(--line-soft);
+}
+.exiles-ui .hh {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-right: 0.5rem;
+}
+.exiles-ui .hh-i {
+  font-size: 1.4rem;
+}
+.exiles-ui .hh-v {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--parch);
+}
+.exiles-ui .hh-heat {
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dim);
+}
+
+/* bars with labels */
+.exiles-ui .bar-row {
+  display: grid;
+  grid-template-columns: 8.6rem 1fr;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.45rem;
+}
+.exiles-ui .bar-l {
+  color: var(--text-dim);
+  font-size: 1.25rem;
+}
+.exiles-ui .farm-status {
+  margin-top: 0.4rem;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+.exiles-ui .farm-status:empty {
+  display: none;
+}
+.exiles-ui .recipe-info {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--parch);
+}
+.exiles-ui .prod-row {
+  display: grid;
+  grid-template-columns: 7.2rem 1fr;
+  align-items: start;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+.exiles-ui .prod-l {
+  color: var(--text-dim);
+  font-size: 1.25rem;
+  padding-top: 0.15rem;
+}
+
+.exiles-ui .sel-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+.exiles-ui .sel-actions .btn.danger {
+  margin-left: auto;
+}
+
+/* citizen */
+.exiles-ui .needs {
+  display: grid;
+  gap: 0.35rem;
+}
+.exiles-ui .need {
+  display: grid;
+  grid-template-columns: 10.4rem 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: help;
+  border-radius: 0.4rem;
+}
+.exiles-ui .need:hover .need-l {
+  color: var(--parch);
+}
+.exiles-ui .need-l {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-dim);
+  font-size: 1.3rem;
+}
+.exiles-ui .need-i {
+  width: 1.8rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.exiles-ui .equip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.exiles-ui .diet {
+  display: flex;
+  gap: 0.3rem;
+  cursor: help;
+}
+.exiles-ui .diet-g {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  filter: grayscale(1) brightness(0.55);
+  opacity: 0.6;
+  transition: filter 0.2s, opacity 0.2s;
+}
+.exiles-ui .diet-g.on {
+  filter: none;
+  opacity: 1;
+  border-color: rgba(147, 200, 92, 0.5);
+  background: rgba(91, 138, 53, 0.2);
+}
+.exiles-ui .equip-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+.exiles-ui .equip {
+  font-size: 1.25rem;
+  color: var(--parch);
+  cursor: help;
+}
+.exiles-ui .task-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.exiles-ui .task {
+  color: var(--parch);
+}
+.exiles-ui .carrying {
+  margin-top: 0.4rem;
+  font-size: 1.25rem;
+  color: var(--text-dim);
+}
+.exiles-ui .family .kv {
+  padding: 0.15rem 0;
+}
+.exiles-ui .kids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.2rem 0.8rem;
+}

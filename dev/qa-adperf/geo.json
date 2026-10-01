@@ -1,0 +1,619 @@
+{
+ "treeLods": [
+  [
+   68,
+   28
+  ],
+  [
+   240,
+   60
+  ],
+  [
+   170,
+   64
+  ],
+  [
+   76
+  ],
+  [
+   76
+  ],
+  [
+   8
+  ]
+ ],
+ "natureLodState": [
+  "1:124 1:31 1:6 0:12 -",
+  "1:69 1:87 1:57 - -",
+  "1:169 1:123 1:35 0:3 0:7",
+  "1:110 1:161 1:79 0:4 0:4",
+  "1:120 1:20 1:7 - 0:3",
+  "1:147 1:37 1:26 - 0:4",
+  "1:33 1:83 1:46 - 0:1",
+  "1:77 1:125 1:62 0:18 0:2",
+  "1:79 1:173 1:130 - -",
+  "1:121 1:109 1:66 0:7 -",
+  "1:43 1:41 1:39 0:10 0:2",
+  "1:194 1:63 1:105 - -",
+  "0:136 0:140 0:64 0:4 -",
+  "0:128 0:69 0:31 - -",
+  "0:143 0:120 0:17 0:9 -",
+  "1:82 1:48 1:10 0:17 0:1",
+  "1:182 1:50 1:29 0:11 -",
+  "0:92 0:37 0:36 - -",
+  "0:30 0:88 0:30 0:5 -",
+  "0:188 0:31 0:19 0:8 -",
+  "1:126 1:29 1:27 - 0:4",
+  "1:124 1:129 1:45 0:5 -",
+  "0:119 0:36 0:21 0:3 0:2",
+  "0:69 0:57 0:33 0:13 -",
+  "0:83 0:13 0:26 - 0:4"
+ ],
+ "meshes": [
+  {
+   "k": "nature:inst:240",
+   "tris": 240,
+   "meshes": 10,
+   "inst": 591,
+   "cast": true,
+   "fc": false,
+   "total": 141840
+  },
+  {
+   "k": "terrain:terrain-border:115008",
+   "tris": 115008,
+   "meshes": 1,
+   "inst": 1,
+   "cast": false,
+   "fc": true,
+   "total": 115008
+  },
+  {
+   "k": "nature:inst:60",
+   "tris": 60,
+   "meshes": 16,
+   "inst": 1309,
+   "cast": true,
+   "fc": true,
+   "total": 78540
+  },
+  {
+   "k": "nature:inst:68",
+   "tris": 68,
+   "meshes": 10,
+   "inst": 988,
+   "cast": true,
+   "fc": false,
+   "total": 67184
+  },
+  {
+   "k": "terrain:terrain-mesh:51200",
+   "tris": 51200,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 51200
+  },
+  {
+   "k": "nature:inst:28",
+   "tris": 28,
+   "meshes": 16,
+   "inst": 1800,
+   "cast": true,
+   "fc": true,
+   "total": 50400
+  },
+  {
+   "k": "nature:inst:64",
+   "tris": 64,
+   "meshes": 16,
+   "inst": 769,
+   "cast": true,
+   "fc": true,
+   "total": 49216
+  },
+  {
+   "k": "nature:inst:170",
+   "tris": 170,
+   "meshes": 10,
+   "inst": 277,
+   "cast": true,
+   "fc": false,
+   "total": 47090
+  },
+  {
+   "k": "nature:inst:76",
+   "tris": 76,
+   "meshes": 26,
+   "inst": 163,
+   "cast": true,
+   "fc": true,
+   "total": 12388
+  },
+  {
+   "k": "buildings-root:piles:logs:378",
+   "tris": 378,
+   "meshes": 1,
+   "inst": 31,
+   "cast": true,
+   "fc": true,
+   "total": 11718
+  },
+  {
+   "k": "animals:inst:60",
+   "tris": 60,
+   "meshes": 3,
+   "inst": 152,
+   "cast": true,
+   "fc": false,
+   "total": 9120
+  },
+  {
+   "k": "citizens:inst:128",
+   "tris": 128,
+   "meshes": 1,
+   "inst": 61,
+   "cast": true,
+   "fc": false,
+   "total": 7808
+  },
+  {
+   "k": "animals:inst:24",
+   "tris": 24,
+   "meshes": 4,
+   "inst": 320,
+   "cast": true,
+   "fc": false,
+   "total": 7680
+  },
+  {
+   "k": "buildings-root:piles:firewood:500",
+   "tris": 500,
+   "meshes": 1,
+   "inst": 12,
+   "cast": true,
+   "fc": true,
+   "total": 6000
+  },
+  {
+   "k": "buildings-root:building-mesh:woodenHouse:1367",
+   "tris": 1367,
+   "meshes": 4,
+   "inst": 4,
+   "cast": true,
+   "fc": true,
+   "total": 5468
+  },
+  {
+   "k": "crops:inst:340",
+   "tris": 340,
+   "meshes": 1,
+   "inst": 16,
+   "cast": false,
+   "fc": true,
+   "total": 5440
+  },
+  {
+   "k": "water:water:4572",
+   "tris": 4572,
+   "meshes": 1,
+   "inst": 1,
+   "cast": false,
+   "fc": true,
+   "total": 4572
+  },
+  {
+   "k": "buildings-root:building-mesh:woodcutter:2230",
+   "tris": 2230,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 4460
+  },
+  {
+   "k": "buildings-root:building-mesh:woodenHouse:1431",
+   "tris": 1431,
+   "meshes": 3,
+   "inst": 3,
+   "cast": true,
+   "fc": true,
+   "total": 4293
+  },
+  {
+   "k": "crops:inst:90",
+   "tris": 90,
+   "meshes": 1,
+   "inst": 44,
+   "cast": false,
+   "fc": true,
+   "total": 3960
+  },
+  {
+   "k": "crops:inst:158",
+   "tris": 158,
+   "meshes": 1,
+   "inst": 25,
+   "cast": true,
+   "fc": true,
+   "total": 3950
+  },
+  {
+   "k": "citizens:inst:64",
+   "tris": 64,
+   "meshes": 1,
+   "inst": 61,
+   "cast": true,
+   "fc": false,
+   "total": 3904
+  },
+  {
+   "k": "buildings-root:building-mesh:townHall:3646",
+   "tris": 3646,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 3646
+  },
+  {
+   "k": "buildings-root:building-mesh:gathererHut:786",
+   "tris": 786,
+   "meshes": 4,
+   "inst": 4,
+   "cast": true,
+   "fc": true,
+   "total": 3144
+  },
+  {
+   "k": "buildings-root:bridges:3036",
+   "tris": 3036,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 3036
+  },
+  {
+   "k": "citizens:inst:104",
+   "tris": 104,
+   "meshes": 1,
+   "inst": 29,
+   "cast": false,
+   "fc": false,
+   "total": 3016
+  },
+  {
+   "k": "citizens:inst:24",
+   "tris": 24,
+   "meshes": 5,
+   "inst": 125,
+   "cast": true,
+   "fc": false,
+   "total": 3000
+  },
+  {
+   "k": "citizens:inst:12",
+   "tris": 12,
+   "meshes": 2,
+   "inst": 244,
+   "cast": true,
+   "fc": false,
+   "total": 2928
+  },
+  {
+   "k": "buildings-root:building-mesh:foresterLodge:1281",
+   "tris": 1281,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 2562
+  },
+  {
+   "k": "effects:mesh:1232",
+   "tris": 1232,
+   "meshes": 2,
+   "inst": 2,
+   "cast": false,
+   "fc": false,
+   "total": 2464
+  },
+  {
+   "k": "buildings-root:building-mesh:school:1228",
+   "tris": 1228,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 2456
+  },
+  {
+   "k": "buildings-root:building-mesh:stoneHouse:1186",
+   "tris": 1186,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 2372
+  },
+  {
+   "k": "citizens:inst:72",
+   "tris": 72,
+   "meshes": 1,
+   "inst": 32,
+   "cast": false,
+   "fc": false,
+   "total": 2304
+  },
+  {
+   "k": "buildings-root:building-mesh:boardingHouse:2266",
+   "tris": 2266,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 2266
+  },
+  {
+   "k": "sky-dome:sky-dome:2208",
+   "tris": 2208,
+   "meshes": 1,
+   "inst": 1,
+   "cast": false,
+   "fc": false,
+   "total": 2208
+  },
+  {
+   "k": "crops:inst:100",
+   "tris": 100,
+   "meshes": 1,
+   "inst": 20,
+   "cast": false,
+   "fc": true,
+   "total": 2000
+  },
+  {
+   "k": "buildings-root:building-mesh:chapel:1986",
+   "tris": 1986,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 1986
+  },
+  {
+   "k": "buildings-root:building-mesh:tavern:1908",
+   "tris": 1908,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 1908
+  },
+  {
+   "k": "buildings-root:building-mesh:storageBarn:942",
+   "tris": 942,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 1884
+  },
+  {
+   "k": "buildings-root:building-mesh:market:1860",
+   "tris": 1860,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 1860
+  },
+  {
+   "k": "buildings-root:building-mesh:quarry:1764",
+   "tris": 1764,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 1764
+  },
+  {
+   "k": "buildings-root:building-mesh:hunterCabin:823",
+   "tris": 823,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 1646
+  },
+  {
+   "k": "animals:inst:48",
+   "tris": 48,
+   "meshes": 1,
+   "inst": 34,
+   "cast": false,
+   "fc": false,
+   "total": 1632
+  },
+  {
+   "k": "buildings-root:building-mesh:woodenHouse:770",
+   "tris": 770,
+   "meshes": 2,
+   "inst": 2,
+   "cast": true,
+   "fc": true,
+   "total": 1540
+  },
+  {
+   "k": "buildings-root:building-mesh:pasture:1532",
+   "tris": 1532,
+   "meshes": 1,
+   "inst": 1,
+   "cast": true,
+   "fc": true,
+   "total": 1532
+  }
+ ],
+ "buildingTris": {
+  "storageBarn": {
+   "n": 2,
+   "tris": 942,
+   "meshes": 1
+  },
+  "stockpile": {
+   "n": 2,
+   "tris": 384,
+   "meshes": 1
+  },
+  "woodenHouse": {
+   "n": 9,
+   "tris": 1431,
+   "meshes": 1
+  },
+  "gathererHut": {
+   "n": 4,
+   "tris": 786,
+   "meshes": 1
+  },
+  "woodcutter": {
+   "n": 2,
+   "tris": 2230,
+   "meshes": 1
+  },
+  "hunterCabin": {
+   "n": 2,
+   "tris": 823,
+   "meshes": 1
+  },
+  "cropField": {
+   "n": 4,
+   "tris": 680,
+   "meshes": 1
+  },
+  "foresterLodge": {
+   "n": 2,
+   "tris": 1281,
+   "meshes": 1
+  },
+  "fishingDock": {
+   "n": 1,
+   "tris": 1182,
+   "meshes": 1
+  },
+  "well": {
+   "n": 1,
+   "tris": 404,
+   "meshes": 1
+  },
+  "cemetery": {
+   "n": 1,
+   "tris": 808,
+   "meshes": 1
+  },
+  "herbalist": {
+   "n": 1,
+   "tris": 1242,
+   "meshes": 1
+  },
+  "tailor": {
+   "n": 1,
+   "tris": 894,
+   "meshes": 1
+  },
+  "orchard": {
+   "n": 2,
+   "tris": 1144,
+   "meshes": 1
+  },
+  "quarry": {
+   "n": 1,
+   "tris": 1764,
+   "meshes": 1
+  },
+  "school": {
+   "n": 2,
+   "tris": 1228,
+   "meshes": 1
+  },
+  "townHall": {
+   "n": 1,
+   "tris": 3646,
+   "meshes": 1
+  },
+  "market": {
+   "n": 1,
+   "tris": 1860,
+   "meshes": 1
+  },
+  "chapel": {
+   "n": 1,
+   "tris": 1986,
+   "meshes": 1
+  },
+  "tavern": {
+   "n": 1,
+   "tris": 1908,
+   "meshes": 1
+  },
+  "hospital": {
+   "n": 1,
+   "tris": 1384,
+   "meshes": 1
+  },
+  "blacksmith": {
+   "n": 1,
+   "tris": 956,
+   "meshes": 1
+  },
+  "brewery": {
+   "n": 1,
+   "tris": 1266,
+   "meshes": 1
+  },
+  "stoneHouse": {
+   "n": 2,
+   "tris": 1186,
+   "meshes": 1
+  },
+  "boardingHouse": {
+   "n": 1,
+   "tris": 2266,
+   "meshes": 1
+  },
+  "pasture": {
+   "n": 3,
+   "tris": 1532,
+   "meshes": 1
+  },
+  "tradingPost": {
+   "n": 1,
+   "tris": 1282,
+   "meshes": 1
+  },
+  "mine": {
+   "n": 1,
+   "tris": 942,
+   "meshes": 1
+  }
+ },
+ "terrain": [
+  {
+   "name": "terrain-mesh",
+   "tris": 51200,
+   "cast": true,
+   "recv": true,
+   "fc": true,
+   "verts": 102400
+  },
+  {
+   "name": "terrain-border",
+   "tris": 115008,
+   "cast": false,
+   "recv": true,
+   "fc": true,
+   "verts": 58680
+  }
+ ]
+}

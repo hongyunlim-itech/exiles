@@ -1,0 +1,1268 @@
+{
+ "quality": "high",
+ "shadows": true,
+ "d8_p0.5": {
+  "actual": {
+   "dist": 7.999999999999998,
+   "pitch": 0.5
+  },
+  "stats": {
+   "calls": 222,
+   "triangles": 1039853,
+   "geometries": 180,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.015,
+   "input": 0.01,
+   "sky": 0.04,
+   "terrain": 0.025,
+   "water": 0.01,
+   "nature": 0.02,
+   "crops": 0.03,
+   "buildings": 0.08,
+   "animals": 0.24,
+   "citizens": 0.345,
+   "effects": 0.045,
+   "webglRender": 14.475,
+   "ui": 0.07,
+   "audio": 0
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 447794,
+    "casters": 101,
+    "casterTris": 446658
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d16_p0.7": {
+  "actual": {
+   "dist": 15.999999999999998,
+   "pitch": 0.7
+  },
+  "stats": {
+   "calls": 228,
+   "triangles": 1059042,
+   "geometries": 180,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0,
+   "input": 0.035,
+   "sky": 0.04,
+   "terrain": 0.015,
+   "water": 0.005,
+   "nature": 0.015,
+   "crops": 0.02,
+   "buildings": 0.09,
+   "animals": 0.2,
+   "citizens": 0.32,
+   "effects": 0.045,
+   "webglRender": 2.23,
+   "ui": 0.04,
+   "audio": 0
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 447794,
+    "casters": 101,
+    "casterTris": 446658
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d30_p0.8": {
+  "actual": {
+   "dist": 30.000000000000004,
+   "pitch": 0.8
+  },
+  "stats": {
+   "calls": 257,
+   "triangles": 1103413,
+   "geometries": 182,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.07,
+   "input": 0.02,
+   "sky": 0.05,
+   "terrain": 0.005,
+   "water": 0.015,
+   "nature": 0.025,
+   "crops": 0.025,
+   "buildings": 0.1,
+   "animals": 0.185,
+   "citizens": 0.32,
+   "effects": 0.045,
+   "webglRender": 2.335,
+   "ui": 0.045,
+   "audio": 0.005
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 447794,
+    "casters": 101,
+    "casterTris": 446658
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d50_p0.9": {
+  "actual": {
+   "dist": 49.99999999999999,
+   "pitch": 0.9
+  },
+  "stats": {
+   "calls": 291,
+   "triangles": 994196,
+   "geometries": 192,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.005,
+   "input": 0.015,
+   "sky": 0.025,
+   "terrain": 0.01,
+   "water": 0.025,
+   "nature": 0.015,
+   "crops": 0.01,
+   "buildings": 0.075,
+   "animals": 0.175,
+   "citizens": 0.33,
+   "effects": 0.045,
+   "webglRender": 3.575,
+   "ui": 0.025,
+   "audio": 0
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 332800,
+    "casters": 101,
+    "casterTris": 331664
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d80_p0.95": {
+  "actual": {
+   "dist": 79.99999999999997,
+   "pitch": 0.95
+  },
+  "stats": {
+   "calls": 339,
+   "triangles": 982584,
+   "geometries": 214,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.005,
+   "input": 0.085,
+   "sky": 0.05,
+   "terrain": 0.025,
+   "water": 0.005,
+   "nature": 0.01,
+   "crops": 0.01,
+   "buildings": 0.085,
+   "animals": 0.22,
+   "citizens": 0.335,
+   "effects": 0.035,
+   "webglRender": 9.17,
+   "ui": 0.04,
+   "audio": 0.01
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 272532,
+    "casters": 101,
+    "casterTris": 271396
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d120_p1": {
+  "actual": {
+   "dist": 119.99999999999997,
+   "pitch": 1
+  },
+  "stats": {
+   "calls": 358,
+   "triangles": 1011786,
+   "geometries": 217,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.005,
+   "input": 0.025,
+   "sky": 0.045,
+   "terrain": 0.035,
+   "water": 0.01,
+   "nature": 0.015,
+   "crops": 0.005,
+   "buildings": 0.055,
+   "animals": 0.195,
+   "citizens": 0.425,
+   "effects": 0.025,
+   "webglRender": 2.92,
+   "ui": 0.03,
+   "audio": 0
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 272532,
+    "casters": 101,
+    "casterTris": 271396
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d120_p0.55": {
+  "actual": {
+   "dist": 119.99999999999997,
+   "pitch": 0.55
+  },
+  "stats": {
+   "calls": 365,
+   "triangles": 1019348,
+   "geometries": 228,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.01,
+   "input": 0.03,
+   "sky": 0.025,
+   "terrain": 0.015,
+   "water": 0.015,
+   "nature": 0.025,
+   "crops": 0.005,
+   "buildings": 0.075,
+   "animals": 0.16,
+   "citizens": 0.715,
+   "effects": 0.035,
+   "webglRender": 12.755,
+   "ui": 0.04,
+   "audio": 0
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 272532,
+    "casters": 101,
+    "casterTris": 271396
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "d120_p1.35": {
+  "actual": {
+   "dist": 119.99999999999997,
+   "pitch": 1.35
+  },
+  "stats": {
+   "calls": 338,
+   "triangles": 963386,
+   "geometries": 228,
+   "textures": 2
+  },
+  "timing": {
+   "sim": 0.005,
+   "input": 0.015,
+   "sky": 0.125,
+   "terrain": 0.005,
+   "water": 0.005,
+   "nature": 0.025,
+   "crops": 0.005,
+   "buildings": 0.09,
+   "animals": 0.17,
+   "citizens": 0.33,
+   "effects": 0.03,
+   "webglRender": 17.22,
+   "ui": 0.05,
+   "audio": 0.005
+  },
+  "breakdown": [
+   {
+    "name": "sky-hemisphere",
+    "type": "HemisphereLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-ambient",
+    "type": "AmbientLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-sun",
+    "type": "DirectionalLight",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "Object3D",
+    "type": "Object3D",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "sky-dome",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 2208,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "terrain",
+    "type": "Group",
+    "meshes": 2,
+    "instances": 2,
+    "tris": 166208,
+    "casters": 1,
+    "casterTris": 51200
+   },
+   {
+    "name": "water",
+    "type": "Mesh",
+    "meshes": 1,
+    "instances": 1,
+    "tris": 4572,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "nature",
+    "type": "Group",
+    "meshes": 108,
+    "instances": 6039,
+    "tris": 272532,
+    "casters": 101,
+    "casterTris": 271396
+   },
+   {
+    "name": "crops",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 105,
+    "tris": 15350,
+    "casters": 1,
+    "casterTris": 3950
+   },
+   {
+    "name": "buildings-root",
+    "type": "Group",
+    "meshes": 62,
+    "instances": 114,
+    "tris": 85313,
+    "casters": 62,
+    "casterTris": 85313
+   },
+   {
+    "name": "animals",
+    "type": "Group",
+    "meshes": 13,
+    "instances": 516,
+    "tris": 19148,
+    "casters": 11,
+    "casterTris": 17420
+   },
+   {
+    "name": "citizens",
+    "type": "Group",
+    "meshes": 16,
+    "instances": 627,
+    "tris": 27502,
+    "casters": 7,
+    "casterTris": 17948
+   },
+   {
+    "name": "effects",
+    "type": "Group",
+    "meshes": 4,
+    "instances": 4,
+    "tris": 8,
+    "casters": 0,
+    "casterTris": 0
+   },
+   {
+    "name": "overlays",
+    "type": "Group",
+    "meshes": 0,
+    "instances": 0,
+    "tris": 0,
+    "casters": 0,
+    "casterTris": 0
+   }
+  ]
+ },
+ "shadow": {
+  "mapSize": 2048,
+  "box": [
+   -64,
+   64,
+   64,
+   -64,
+   1,
+   380
+  ],
+  "bias": -0.0004,
+  "normalBias": 0.035,
+  "radius": 2.5,
+  "type": 1,
+  "pixelRatio": 1
+ }
+}

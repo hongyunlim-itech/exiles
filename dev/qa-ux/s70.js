@@ -1,0 +1,20 @@
+await page.keyboard.press('v'); await page.waitForTimeout(300);
+const tool = await page.evaluate(()=>window.__app.input.tool);
+await page.mouse.move(640, 440, {steps:3}); await page.waitForTimeout(300);
+const h0 = await page.evaluate(()=>document.querySelector('.ui-hover')?.innerText);
+await page.mouse.down();
+await page.mouse.move(1040, 440, {steps:10}); await page.waitForTimeout(500);
+const lbl = await page.evaluate(()=>[...document.querySelectorAll('.ui-hover, .exiles-tool-label')].filter(e=>e.getBoundingClientRect().height>0).map(e=>e.innerText));
+await shot('57_road_drag');
+await page.mouse.up(); await page.waitForTimeout(400);
+// L-shaped second road down the west side of the stockpile
+await page.mouse.move(690, 440, {steps:2});
+await page.mouse.down();
+await page.mouse.move(690, 700, {steps:8});
+await page.mouse.move(1000, 700, {steps:8}); await page.waitForTimeout(500);
+const lbl2 = await page.evaluate(()=>[...document.querySelectorAll('.ui-hover, .exiles-tool-label')].filter(e=>e.getBoundingClientRect().height>0).map(e=>e.innerText));
+await shot('57b_road_L');
+await page.mouse.up(); await page.waitForTimeout(400);
+const roads = await page.evaluate(()=>{const r=window.__app.game.state.tiles.road; let n=0; for (let i=0;i<r.length;i++) if(r[i]) n++; return n;});
+await shot('58_roads_done');
+return [tool, h0, lbl, lbl2, roads];

@@ -1,0 +1,1 @@
+return await page.evaluate(()=>{const e=document.elementFromPoint(300,775); const items=[...document.querySelectorAll('.flyout:not([hidden]) .fly-item')].map(b=>({l:b.getAttribute('aria-label'), r:b.getBoundingClientRect().toJSON(), cls:b.className, dis:b.disabled})); return {el: e?.outerHTML?.slice(0,200), items};});

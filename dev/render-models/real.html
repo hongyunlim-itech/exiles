@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>render-models: real game integration</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #17130e; }
+      #app { position: fixed; inset: 0; }
+      #app canvas { display: block; width: 100%; height: 100%; }
+      #hud { position: fixed; left: 8px; top: 8px; color: #eadfc8; background: rgba(0,0,0,.55); padding: 6px 8px; border-radius: 4px; font: 12px system-ui; z-index: 10; white-space: pre; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">simulating…</div>
+    <script type="module" src="./real.ts"></script>
+  </body>
+</html>

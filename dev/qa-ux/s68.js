@@ -1,0 +1,10 @@
+const get = ()=>page.evaluate(()=>window.__app.game.state.buildings.find(b=>b.type==='foresterLodge').workersDesired);
+const a = await get();
+await page.mouse.click(908, 634); await page.waitForTimeout(80);
+const b = await get();
+await page.mouse.click(908, 634); await page.waitForTimeout(80);
+const c = await get();
+await page.mouse.click(937, 634); await page.waitForTimeout(80);
+await page.mouse.click(937, 634); await page.waitForTimeout(80);
+const d = await get();
+return [a,b,c,d];

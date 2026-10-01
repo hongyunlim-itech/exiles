@@ -1,0 +1,795 @@
+/* ============================================================================================
+   Exiles UI — base tokens & primitives. 1rem is scaled with the viewport by UIManager
+   (10px at 1280×720 → ~12px at 1440p), so every size here is in rem.
+   ============================================================================================ */
+
+.exiles-ui {
+  --wood-1: #3b2c1d;
+  --wood-2: #2b2016;
+  --wood-3: #1e1710;
+  --panel: rgba(28, 22, 16, 0.88);
+  --panel-bg: linear-gradient(180deg, rgba(48, 37, 26, 0.95) 0%, rgba(31, 24, 17, 0.94) 60%, rgba(26, 20, 14, 0.95) 100%);
+  --panel-solid: #221a12;
+  --inset: rgba(0, 0, 0, 0.28);
+  --inset-2: rgba(0, 0, 0, 0.4);
+  --line: rgba(201, 164, 92, 0.24);
+  --line-soft: rgba(201, 164, 92, 0.13);
+  --line-strong: rgba(201, 164, 92, 0.55);
+  --gold: #c9a45c;
+  --gold-hi: #e6c47c;
+  --gold-lo: #8a6d38;
+  --parch: #e8dcc0;
+  --text: #eadfc8;
+  --text-dim: #b3a489;
+  --text-faint: #857660;
+  --good: #93c85c;
+  --good-d: #5b8a35;
+  --warn: #e6aa3e;
+  --warn-d: #a8741d;
+  --bad: #e2644e;
+  --bad-d: #9c3627;
+  --info: #7fb2d9;
+  --info-d: #3f6f94;
+  --shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.5), 0 0.2rem 0.6rem rgba(0, 0, 0, 0.35);
+  --radius: 0.6rem;
+  --font-body: 'Alegreya Sans', 'Segoe UI', 'Trebuchet MS', system-ui, sans-serif;
+  --font-head: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  line-height: 1.35;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.exiles-ui *,
+.exiles-ui *::before,
+.exiles-ui *::after {
+  box-sizing: border-box;
+}
+
+.exiles-ui [hidden] {
+  display: none !important;
+}
+
+.exiles-ui button,
+.exiles-ui input,
+.exiles-ui select,
+.exiles-ui textarea {
+  font: inherit;
+  color: inherit;
+}
+
+.exiles-ui button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.exiles-ui button:disabled {
+  cursor: default;
+}
+
+.exiles-ui :focus-visible {
+  outline: 2px solid var(--gold-hi);
+  outline-offset: 1px;
+}
+
+.exiles-ui p {
+  margin: 0;
+}
+
+.exiles-ui input[type='text'],
+.exiles-ui input[type='search'],
+.exiles-ui input[type='number'] {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* scrollbars */
+.exiles-ui * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 164, 92, 0.4) transparent;
+}
+.exiles-ui ::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.exiles-ui ::-webkit-scrollbar-thumb {
+  background: rgba(201, 164, 92, 0.35);
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.exiles-ui ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---- panels ------------------------------------------------------------------------------ */
+
+.exiles-ui .panel {
+  position: relative;
+  background: var(--panel-bg);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 232, 180, 0.07), inset 0 0 0 1px rgba(0, 0, 0, 0.55);
+  pointer-events: auto;
+}
+
+/* inner hairline frame for a carved look */
+.exiles-ui .panel::before {
+  content: '';
+  position: absolute;
+  inset: 0.3rem;
+  border: 1px solid rgba(201, 164, 92, 0.1);
+  border-radius: calc(var(--radius) - 0.2rem);
+  pointer-events: none;
+}
+
+/* ---- buttons ----------------------------------------------------------------------------- */
+
+.exiles-ui .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3.2rem;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(201, 164, 92, 0.42);
+  background: linear-gradient(180deg, #4f3b27 0%, #3a2b1c 100%);
+  color: var(--parch);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: inset 0 1px 0 rgba(255, 230, 180, 0.12), 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: background 0.12s, border-color 0.12s, transform 0.05s, filter 0.12s;
+  white-space: nowrap;
+}
+.exiles-ui .btn:hover:not(:disabled) {
+  border-color: var(--gold-hi);
+  background: linear-gradient(180deg, #5d4630 0%, #443220 100%);
+}
+.exiles-ui .btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.exiles-ui .btn:disabled {
+  opacity: 0.45;
+  filter: saturate(0.4);
+}
+.exiles-ui .btn.primary {
+  background: linear-gradient(180deg, #d9b56a 0%, #b48a45 100%);
+  border-color: #f0d494;
+  color: #26190c;
+  text-shadow: 0 1px 0 rgba(255, 240, 200, 0.35);
+}
+.exiles-ui .btn.primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #e8c77e 0%, #c39752 100%);
+}
+.exiles-ui .btn.danger {
+  border-color: rgba(226, 100, 78, 0.55);
+  color: #f1c1b6;
+}
+.exiles-ui .btn.danger:hover:not(:disabled) {
+  border-color: var(--bad);
+  background: linear-gradient(180deg, #6a3226 0%, #4a2219 100%);
+}
+.exiles-ui .btn.danger.solid {
+  background: linear-gradient(180deg, #b44a36 0%, #8b3222 100%);
+  border-color: #e78a74;
+  color: #fff1ea;
+}
+.exiles-ui .btn.small {
+  min-height: 2.6rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.25rem;
+}
+.exiles-ui .btn.big {
+  min-height: 4.2rem;
+  padding: 0.6rem 2.4rem;
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+}
+.exiles-ui .btn.block {
+  width: 100%;
+}
+.exiles-ui .btn.on {
+  border-color: var(--gold-hi);
+  background: linear-gradient(180deg, #6b5230 0%, #4d3a22 100%);
+  color: var(--gold-hi);
+}
+
+/* icon button */
+.exiles-ui .ibtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  color: var(--text-dim);
+  font-size: 1.4rem;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+.exiles-ui .ibtn:hover {
+  background: rgba(201, 164, 92, 0.14);
+  border-color: var(--line);
+  color: var(--parch);
+}
+.exiles-ui .ibtn.on {
+  background: rgba(201, 164, 92, 0.22);
+  border-color: var(--gold);
+  color: var(--gold-hi);
+}
+.exiles-ui .ibtn.danger:hover {
+  background: rgba(226, 100, 78, 0.18);
+  border-color: rgba(226, 100, 78, 0.5);
+}
+.exiles-ui .ibtn-i {
+  line-height: 1;
+}
+
+/* link-style (names) */
+.exiles-ui .link {
+  color: var(--gold-hi);
+  text-align: left;
+  border-radius: 0.3rem;
+  padding: 0 0.2rem;
+  margin: 0 -0.2rem;
+  transition: color 0.1s, background 0.1s;
+}
+.exiles-ui .link:hover:not(:disabled) {
+  color: #fff0c8;
+  background: rgba(201, 164, 92, 0.12);
+  text-decoration: underline;
+  text-decoration-color: rgba(230, 196, 124, 0.5);
+  text-underline-offset: 0.2rem;
+}
+.exiles-ui .link:disabled {
+  color: var(--text-dim);
+}
+
+/* stepper −/+ */
+.exiles-ui .stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--inset);
+  border: 1px solid var(--line-soft);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+.exiles-ui .step-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(180deg, #4f3b27, #3a2b1c);
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  color: var(--parch);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: border-color 0.1s, background 0.1s;
+}
+.exiles-ui .step-btn:hover:not(:disabled) {
+  border-color: var(--gold-hi);
+  background: linear-gradient(180deg, #634a31, #47341f);
+}
+.exiles-ui .step-btn:disabled {
+  opacity: 0.35;
+}
+.exiles-ui .step-val {
+  min-width: 4.4rem;
+  text-align: center;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--parch);
+}
+.exiles-ui .step-val:empty {
+  display: none;
+}
+
+/* segmented control */
+.exiles-ui .seg {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  gap: 0.2rem;
+  padding: 0.25rem;
+  background: var(--inset-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 0.6rem;
+  max-width: 100%;
+}
+.exiles-ui .seg.wrap {
+  flex-wrap: wrap;
+}
+.exiles-ui .seg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  min-height: 2.8rem;
+  border-radius: 0.4rem;
+  color: var(--text-dim);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s, box-shadow 0.12s;
+}
+.exiles-ui .seg-btn:hover:not(:disabled):not(.on) {
+  background: rgba(201, 164, 92, 0.1);
+  color: var(--parch);
+}
+.exiles-ui .seg-btn.on {
+  background: linear-gradient(180deg, #6b5230, #4b3920);
+  color: var(--gold-hi);
+  box-shadow: inset 0 0 0 1px rgba(230, 196, 124, 0.55), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.exiles-ui .seg-btn:disabled {
+  opacity: 0.4;
+}
+.exiles-ui .seg.small .seg-btn {
+  min-height: 2.4rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.25rem;
+}
+.exiles-ui .seg-i {
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+/* toggle switch */
+.exiles-ui .tgl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.4rem 0;
+}
+.exiles-ui .tgl-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.exiles-ui .tgl-track {
+  position: relative;
+  flex: none;
+  width: 4rem;
+  height: 2.2rem;
+  border-radius: 2rem;
+  background: var(--inset-2);
+  border: 1px solid var(--line);
+  transition: background 0.15s, border-color 0.15s;
+}
+.exiles-ui .tgl-knob {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #b8a78a, #8d7d63);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s var(--ease), background 0.15s;
+}
+.exiles-ui .tgl-input:checked + .tgl-track {
+  background: rgba(201, 164, 92, 0.35);
+  border-color: var(--gold);
+}
+.exiles-ui .tgl-input:checked + .tgl-track .tgl-knob {
+  transform: translateX(1.8rem);
+  background: linear-gradient(180deg, #f0d494, #c9a45c);
+}
+.exiles-ui .tgl-input:focus-visible + .tgl-track {
+  outline: 2px solid var(--gold-hi);
+  outline-offset: 2px;
+}
+.exiles-ui .tgl-text {
+  display: flex;
+  flex-direction: column;
+}
+.exiles-ui .tgl-label {
+  font-weight: 600;
+  color: var(--parch);
+}
+.exiles-ui .tgl-desc {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+}
+
+/* text inputs */
+.exiles-ui .input {
+  min-height: 3.2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+  background: rgba(10, 8, 5, 0.45);
+  color: var(--parch);
+  outline: none;
+  transition: border-color 0.12s, box-shadow 0.12s;
+  min-width: 0;
+}
+.exiles-ui .input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(201, 164, 92, 0.2);
+}
+.exiles-ui .input.mono {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+.exiles-ui select.input {
+  cursor: pointer;
+}
+.exiles-ui select.input option {
+  background: #2a2016;
+  color: var(--parch);
+}
+.exiles-ui .input-row {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.exiles-ui .input-row .input {
+  flex: 1;
+}
+
+/* range slider */
+.exiles-ui .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background: var(--inset-2);
+  border: 1px solid var(--line-soft);
+  cursor: pointer;
+}
+.exiles-ui .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f0d494, #b48a45);
+  border: 1px solid #f7e2b0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.exiles-ui .slider::-moz-range-thumb {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f0d494, #b48a45);
+  border: 1px solid #f7e2b0;
+}
+
+/* progress bars */
+.exiles-ui .bar {
+  position: relative;
+  height: 1.9rem;
+  border-radius: 0.4rem;
+  background: var(--inset-2);
+  border: 1px solid var(--line-soft);
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+.exiles-ui .bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+  background: linear-gradient(180deg, var(--c1), var(--c2));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: width 0.35s var(--ease);
+}
+.exiles-ui .bar-label {
+  position: relative;
+  display: block;
+  padding: 0 0.7rem;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #fbf3df;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+.exiles-ui .bar.tone-good { --c1: #8fc25a; --c2: #5b8a35; }
+.exiles-ui .bar.tone-warn { --c1: #e8b04a; --c2: #a8741d; }
+.exiles-ui .bar.tone-bad { --c1: #e36a52; --c2: #9c3627; }
+.exiles-ui .bar.tone-gold { --c1: #d9b56a; --c2: #9b7536; }
+.exiles-ui .bar.tone-info { --c1: #88b9de; --c2: #3f6f94; }
+.exiles-ui .bar.tone-neutral { --c1: #a59a86; --c2: #6d6454; }
+
+/* chips */
+.exiles-ui .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.exiles-ui .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.7rem 0.15rem 0.45rem;
+  border-radius: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line-soft);
+  font-size: 1.25rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.exiles-ui .chip-i {
+  font-size: 1.15em;
+  line-height: 1;
+}
+.exiles-ui .chip-n {
+  font-weight: 600;
+  color: var(--parch);
+}
+.exiles-ui .chip.short .chip-n {
+  color: var(--bad);
+}
+.exiles-ui .chip.done {
+  border-color: rgba(147, 200, 92, 0.4);
+}
+.exiles-ui .chip.done .chip-n {
+  color: var(--good);
+}
+.exiles-ui .chips-empty,
+.exiles-ui .cost-free {
+  color: var(--text-dim);
+  font-style: italic;
+  font-size: 1.25rem;
+}
+.exiles-ui .cost {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.exiles-ui .cost .chip {
+  padding: 0 0.5rem 0 0.3rem;
+  font-size: 1.15rem;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* badges */
+.exiles-ui .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.05rem 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 1px solid;
+  white-space: nowrap;
+}
+.exiles-ui .badge.good { color: var(--good); border-color: rgba(147, 200, 92, 0.45); background: rgba(91, 138, 53, 0.18); }
+.exiles-ui .badge.warn { color: var(--warn); border-color: rgba(230, 170, 62, 0.45); background: rgba(168, 116, 29, 0.18); }
+.exiles-ui .badge.bad { color: #f08a75; border-color: rgba(226, 100, 78, 0.5); background: rgba(156, 54, 39, 0.22); }
+.exiles-ui .badge.info { color: var(--info); border-color: rgba(127, 178, 217, 0.45); background: rgba(63, 111, 148, 0.2); }
+.exiles-ui .badge.gold { color: var(--gold-hi); border-color: rgba(230, 196, 124, 0.5); background: rgba(201, 164, 92, 0.15); }
+.exiles-ui .badge.neutral { color: var(--text-dim); border-color: var(--line); background: rgba(0, 0, 0, 0.2); }
+
+.exiles-ui .t-good { color: var(--good) !important; }
+.exiles-ui .t-warn { color: var(--warn) !important; }
+.exiles-ui .t-bad { color: var(--bad) !important; }
+.exiles-ui .dim { color: var(--text-dim); }
+
+/* key caps */
+.exiles-ui kbd {
+  display: inline-block;
+  min-width: 2.2rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(201, 164, 92, 0.45);
+  border-bottom-width: 2px;
+  background: linear-gradient(180deg, #3f3021, #2c2117);
+  color: var(--parch);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* sections inside panels & windows */
+.exiles-ui .sec {
+  padding: 0.9rem 0 0.2rem;
+}
+.exiles-ui .sec + .sec {
+  border-top: 1px solid var(--line-soft);
+  margin-top: 0.6rem;
+}
+.exiles-ui .sec-h {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 0.6rem;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.exiles-ui .sec-aside {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+/* key / value rows */
+.exiles-ui .kv {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.2rem 0;
+}
+.exiles-ui .kv.top {
+  align-items: flex-start;
+}
+.exiles-ui .kv-l {
+  color: var(--text-dim);
+  flex: none;
+}
+.exiles-ui .kv-v {
+  color: var(--parch);
+  font-weight: 600;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- tooltips ------------------------------------------------------------------------------ */
+
+.exiles-ui .ui-tip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  max-width: 32rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, rgba(40, 31, 22, 0.98), rgba(24, 18, 12, 0.98));
+  border: 1px solid rgba(201, 164, 92, 0.6);
+  box-shadow: 0 0.6rem 1.8rem rgba(0, 0, 0, 0.55);
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1.4;
+  white-space: pre-line;
+  pointer-events: none;
+  animation: ui-fade-in 0.12s ease-out;
+}
+.exiles-ui .ui-tip.rich {
+  padding: 0.8rem 1rem;
+  min-width: 20rem;
+}
+.exiles-ui .tip-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--gold-hi);
+  letter-spacing: 0.03em;
+}
+.exiles-ui .tip-icon {
+  font-size: 1.3em;
+}
+.exiles-ui .tip-sub {
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+}
+.exiles-ui .tip-desc {
+  margin-top: 0.4rem;
+  color: var(--text);
+  white-space: normal;
+}
+.exiles-ui .tip-rows {
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--line-soft);
+  display: grid;
+  gap: 0.15rem;
+}
+.exiles-ui .tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  white-space: nowrap;
+}
+.exiles-ui .tip-l {
+  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.exiles-ui .tip-ri {
+  width: 1.8rem;
+  text-align: center;
+}
+.exiles-ui .tip-v {
+  font-weight: 700;
+  color: var(--parch);
+  font-variant-numeric: tabular-nums;
+}
+.exiles-ui .tip-row.t-good .tip-v { color: var(--good); }
+.exiles-ui .tip-row.t-bad .tip-v,
+.exiles-ui .tip-row.t-bad .tip-l { color: var(--bad); }
+.exiles-ui .tip-row.t-warn .tip-v { color: var(--warn); }
+.exiles-ui .tip-row.t-dim .tip-v,
+.exiles-ui .tip-row.t-dim .tip-l { color: var(--text-faint); }
+.exiles-ui .tip-row.t-good,
+.exiles-ui .tip-row.t-bad,
+.exiles-ui .tip-row.t-warn {
+  color: inherit !important;
+}
+.exiles-ui .tip-note {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-dim);
+  white-space: normal;
+}
+.exiles-ui .tip-note.t-bad { color: var(--bad) !important; font-style: normal; font-weight: 600; }
+.exiles-ui .tip-note.t-warn { color: var(--warn) !important; font-style: normal; }
+.exiles-ui .tip-note.t-good { color: var(--good) !important; }
+
+.exiles-ui .ui-hover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  max-width: 30rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.4rem;
+  background: rgba(22, 17, 11, 0.9);
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.45);
+  color: var(--parch);
+  font-size: 1.3rem;
+  line-height: 1.35;
+  white-space: pre-line;
+  pointer-events: none;
+}
+
+@keyframes ui-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes ui-pop {
+  from { opacity: 0; transform: translateY(0.6rem) scale(0.985); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ui-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(230, 196, 124, 0.55); }
+  50% { box-shadow: 0 0 0 0.5rem rgba(230, 196, 124, 0); }
+}
+@keyframes ui-pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(226, 100, 78, 0.7); }
+  50% { box-shadow: 0 0 0 0.5rem rgba(226, 100, 78, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exiles-ui *,
+  .exiles-ui *::before,
+  .exiles-ui *::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+  }
+}

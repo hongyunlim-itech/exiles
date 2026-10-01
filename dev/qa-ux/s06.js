@@ -1,0 +1,16 @@
+await page.mouse.move(540, 330, {steps:4});
+await page.waitForTimeout(400);
+await shot('11_ghost_ok');
+const n0 = await page.evaluate(()=>window.__app.game.state.buildings.length);
+await page.mouse.click(540, 330);
+await page.waitForTimeout(400);
+await page.mouse.move(540, 480, {steps:4});
+await page.waitForTimeout(300);
+await page.mouse.click(540, 480);
+await page.waitForTimeout(400);
+await page.mouse.move(540, 620, {steps:4});
+await page.waitForTimeout(300);
+await page.mouse.click(540, 620);
+await page.waitForTimeout(400);
+const bs = await page.evaluate(()=>window.__app.game.state.buildings.map(b=>`${b.id}:${b.type}@${b.x},${b.z} r${b.rotation} ${b.state}`));
+return [n0, bs, await shot('12_placed3'), await page.evaluate(()=>window.__app.game.resourceTotals().log)];

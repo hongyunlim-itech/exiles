@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exiles — Frontier Town Builder</title>
+    <meta name="description" content="A survival city-builder in the browser, inspired by Banished." />
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #17130e; color: #eadfc8; }
+      #app { position: fixed; inset: 0; }
+      #app canvas { display: block; width: 100%; height: 100%; outline: none; }
+      #ui { position: fixed; inset: 0; pointer-events: none; }
+      #boot {
+        position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+        font: 600 20px Georgia, serif; letter-spacing: 0.08em; color: #d8c49a; background: #17130e;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="ui"></div>
+    <div id="boot">Preparing the land…</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

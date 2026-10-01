@@ -1,0 +1,17 @@
+const st = () => page.evaluate(()=>[...document.querySelectorAll('.toolbar .tool-btn')].map(b=>b.getAttribute('aria-label')+':'+b.className.replace('tool-btn','').trim()).join(' | '));
+const out = [];
+out.push(['start', await st(), await page.evaluate(()=>window.__app.input.tool)]);
+await page.keyboard.press('Escape'); await page.waitForTimeout(200);
+out.push(['esc', await st(), await page.evaluate(()=>window.__app.input.tool)]);
+await page.mouse.click(685, 850); await page.waitForTimeout(300);
+out.push(['food', await st()]);
+await page.mouse.click(758, 850); await page.waitForTimeout(300);
+out.push(['res', await st()]);
+await page.mouse.click(830, 850); await page.waitForTimeout(300);
+out.push(['town', await st()]);
+const t0 = Date.now();
+await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
+out.push(['2 frames ms', Date.now()-t0]);
+await page.mouse.click(830, 850); await page.waitForTimeout(300);
+out.push(['town again', await st()]);
+return out;

@@ -1,0 +1,578 @@
+{
+ "out": {
+  "tree0_lod0": 68,
+  "tree0_lod1": 28,
+  "tree1_lod0": 240,
+  "tree1_lod1": 60,
+  "tree2_lod0": 170,
+  "tree2_lod1": 64,
+  "rock": 76,
+  "iron": 76,
+  "marker": 8
+ },
+ "per": {
+  "citizens": [
+   {
+    "n": "",
+    "tris": 24,
+    "count": 116,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 64,
+    "count": 58,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 44,
+    "count": 30,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 128,
+    "count": 58,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 72,
+    "count": 28,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 104,
+    "count": 30,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 12,
+    "count": 116,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 12,
+    "count": 116,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 88,
+    "count": 16,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 44,
+    "count": 0,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 40,
+    "count": 10,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 2,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 36,
+    "count": 1,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 36,
+    "count": 1,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 40,
+    "count": 0,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 0,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 2,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 34,
+    "count": 1,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 66,
+    "count": 0,
+    "cast": false,
+    "fc": false
+   }
+  ],
+  "animals": [
+   {
+    "n": "",
+    "tris": 120,
+    "count": 2,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 56,
+    "count": 2,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 8,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 2,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 2,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 8,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 54,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 52,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 0,
+    "cast": false,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 80,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 80,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 24,
+    "count": 320,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 48,
+    "count": 34,
+    "cast": false,
+    "fc": false
+   }
+  ],
+  "crops": [
+   {
+    "n": "",
+    "tris": 158,
+    "count": 25,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 340,
+    "count": 16,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 54,
+    "count": 0,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 100,
+    "count": 190,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 144,
+    "count": 0,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 48,
+    "count": 0,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 120,
+    "count": 0,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 168,
+    "count": 0,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 90,
+    "count": 15,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 120,
+    "count": 0,
+    "cast": false,
+    "fc": true
+   }
+  ],
+  "nature": [
+   {
+    "n": "",
+    "tris": 68,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 240,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 170,
+    "count": 0,
+    "cast": true,
+    "fc": false
+   },
+   {
+    "n": "",
+    "tris": 28,
+    "count": 139,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 43,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 64,
+    "count": 34,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 23,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 7,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 28,
+    "count": 131,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 58,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 64,
+    "count": 34,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 1,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 1,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 28,
+    "count": 108,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 60,
+    "count": 25,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 64,
+    "count": 48,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 10,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 76,
+    "count": 2,
+    "cast": true,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 8,
+    "count": 6,
+    "cast": false,
+    "fc": true
+   },
+   {
+    "n": "",
+    "tris": 28,
+    "count": 158,
+    "cast": true,
+    "fc": true
+   }
+  ]
+ },
+ "byType": {
+  "storageBarn": {
+   "tris": 982,
+   "meshes": 1
+  },
+  "stockpile": {
+   "tris": 384,
+   "meshes": 1
+  },
+  "woodenHouse": {
+   "tris": 1058,
+   "meshes": 2
+  },
+  "gathererHut": {
+   "tris": 738,
+   "meshes": 1
+  },
+  "woodcutter": {
+   "tris": 2230,
+   "meshes": 1
+  },
+  "hunterCabin": {
+   "tris": 823,
+   "meshes": 1
+  },
+  "cropField": {
+   "tris": 584,
+   "meshes": 1
+  },
+  "foresterLodge": {
+   "tris": 1281,
+   "meshes": 1
+  },
+  "fishingDock": {
+   "tris": 1182,
+   "meshes": 1
+  },
+  "well": {
+   "tris": 404,
+   "meshes": 1
+  },
+  "herbalist": {
+   "tris": 1242,
+   "meshes": 1
+  },
+  "cemetery": {
+   "tris": 808,
+   "meshes": 1
+  },
+  "quarry": {
+   "tris": 1764,
+   "meshes": 1
+  },
+  "orchard": {
+   "tris": 1036,
+   "meshes": 1
+  },
+  "tailor": {
+   "tris": 894,
+   "meshes": 1
+  },
+  "townHall": {
+   "tris": 3646,
+   "meshes": 1
+  },
+  "market": {
+   "tris": 1860,
+   "meshes": 1
+  },
+  "chapel": {
+   "tris": 1986,
+   "meshes": 1
+  },
+  "tavern": {
+   "tris": 1908,
+   "meshes": 1
+  },
+  "school": {
+   "tris": 1228,
+   "meshes": 1
+  },
+  "hospital": {
+   "tris": 1384,
+   "meshes": 1
+  },
+  "blacksmith": {
+   "tris": 956,
+   "meshes": 1
+  },
+  "brewery": {
+   "tris": 1266,
+   "meshes": 1
+  },
+  "stoneHouse": {
+   "tris": 1186,
+   "meshes": 1
+  },
+  "boardingHouse": {
+   "tris": 2266,
+   "meshes": 1
+  },
+  "pasture": {
+   "tris": 1388,
+   "meshes": 1
+  },
+  "tradingPost": {
+   "tris": 1282,
+   "meshes": 1
+  },
+  "mine": {
+   "tris": 942,
+   "meshes": 1
+  }
+ }
+}

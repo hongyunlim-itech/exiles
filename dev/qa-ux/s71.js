@@ -1,0 +1,13 @@
+await page.mouse.click(1300, 300, {button:'right'}); await page.waitForTimeout(200);
+await page.mouse.click(985, 850); await page.waitForTimeout(500);
+await page.mouse.click(960, 597); await page.waitForTimeout(300);
+const tool = await page.evaluate(()=>window.__app.input.tool);
+await page.mouse.move(120, 120, {steps:3}); await page.waitForTimeout(200);
+await page.mouse.down();
+await page.mouse.move(330, 330, {steps:8}); await page.waitForTimeout(500);
+const lbl = await page.evaluate(()=>[...document.querySelectorAll('.ui-hover, .exiles-tool-label')].filter(e=>e.getBoundingClientRect().height>0).map(e=>e.innerText));
+await shot('59_clear_trees_drag');
+await page.mouse.up(); await page.waitForTimeout(400);
+await page.mouse.click(1300, 300, {button:'right'}); await page.waitForTimeout(200);
+await shot('59b_marked_trees');
+return [tool, lbl, await page.evaluate(()=>window.__app.game.rt.marked.size)];

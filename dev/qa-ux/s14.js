@@ -1,0 +1,11 @@
+await page.mouse.click(685, 850); await page.waitForTimeout(400);
+await page.mouse.click(427, 770); await page.waitForTimeout(300);
+await page.mouse.move(880, 610, {steps:4}); await page.waitForTimeout(400);
+const h0 = await page.evaluate(()=>document.querySelector('[class*=hover]')?.innerText);
+await page.mouse.down();
+await page.mouse.move(960, 660, {steps:6}); await page.waitForTimeout(400);
+const h1 = await page.evaluate(()=>[...document.querySelectorAll('[class*=hover], [class*=label]')].filter(e=>e.getBoundingClientRect().height>0).map(e=>e.className+': '+e.innerText));
+await shot('21_field_drag');
+await page.mouse.up(); await page.waitForTimeout(400);
+const bs = await page.evaluate(()=>window.__app.game.state.buildings.filter(b=>b.type==='cropField').map(b=>`${b.id}:${b.type}@${b.x},${b.z} ${b.w}x${b.h} ${b.state} crop=${b.crop}`));
+return [h0,h1,bs];

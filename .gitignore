@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.wrangler/
+.artifact-build/
+dev/**/build/
+dev/**/.cache/
+*.log
+dev/**/*.png
+dev/**/*.jpg
+dev/**/*.webp
+dev/**/*.gif
+dev/**/*.webm
+dev/**/*.mp4
+dev/**/out/
+dev/**/shots/
